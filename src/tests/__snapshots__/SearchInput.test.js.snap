@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render SearchInput Provider correctly 1`] = `
+exports[`Render SearchInput correctly 1`] = `
 ReactWrapper {
-  Symbol(enzyme.__unrendered__): <SearchInput>
+  Symbol(enzyme.__unrendered__): <SearchInput
+    onChange={[Function]}
+    onSubmit={[Function]}
+    value="New Query String!"
+>
     <Input />
     <SearchButton />
 </SearchInput>,
@@ -24,6 +28,9 @@ ReactWrapper {
         <Input />,
         <SearchButton />,
       ],
+      "onChange": [Function],
+      "onSubmit": [Function],
+      "value": "New Query String!",
     },
     "ref": null,
     "rendered": Object {
@@ -35,7 +42,7 @@ ReactWrapper {
                 class="search-form--input"
                 placeholder="Zoeken"
                 name="query"
-                value=""
+                value="New Query String!"
         />
         <button
                 class="search-form--button"
@@ -80,7 +87,7 @@ ReactWrapper {
               class="search-form--input"
               placeholder="Zoeken"
               name="query"
-              value=""
+              value="New Query String!"
 />,
             "key": undefined,
             "nodeType": "host",
@@ -88,13 +95,13 @@ ReactWrapper {
               "className": "search-form--input",
               "name": "query",
               "onBlur": [Function],
-              "onChange": undefined,
+              "onChange": [Function],
               "onFocus": [Function],
               "placeholder": "Zoeken",
               "type": "text",
-              "value": undefined,
+              "value": "New Query String!",
             },
-            "ref": null,
+            "ref": [Function],
             "rendered": Array [
               undefined,
             ],
@@ -278,6 +285,9 @@ ReactWrapper {
           <Input />,
           <SearchButton />,
         ],
+        "onChange": [Function],
+        "onSubmit": [Function],
+        "value": "New Query String!",
       },
       "ref": null,
       "rendered": Object {
@@ -289,7 +299,7 @@ ReactWrapper {
                     class="search-form--input"
                     placeholder="Zoeken"
                     name="query"
-                    value=""
+                    value="New Query String!"
           />
           <button
                     class="search-form--button"
@@ -334,7 +344,7 @@ ReactWrapper {
                 class="search-form--input"
                 placeholder="Zoeken"
                 name="query"
-                value=""
+                value="New Query String!"
 />,
               "key": undefined,
               "nodeType": "host",
@@ -342,13 +352,13 @@ ReactWrapper {
                 "className": "search-form--input",
                 "name": "query",
                 "onBlur": [Function],
-                "onChange": undefined,
+                "onChange": [Function],
                 "onFocus": [Function],
                 "placeholder": "Zoeken",
                 "type": "text",
-                "value": undefined,
+                "value": "New Query String!",
               },
-              "ref": null,
+              "ref": [Function],
               "rendered": Array [
                 undefined,
               ],
