@@ -16,6 +16,7 @@ it('Render SearchInput correctly', () => {
         >
             <SearchInput.Input />
             <SearchInput.SearchButton />
+            <SearchInput.RemoveButton />
         </SearchInput>
     );
     expect(wrapper).toMatchSnapshot();

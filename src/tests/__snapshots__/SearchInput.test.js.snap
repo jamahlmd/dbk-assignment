@@ -9,6 +9,7 @@ ReactWrapper {
 >
     <Input />
     <SearchButton />
+    <RemoveButton />
 </SearchInput>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -27,6 +28,7 @@ ReactWrapper {
       "children": Array [
         <Input />,
         <SearchButton />,
+        <RemoveButton />,
       ],
       "onChange": [Function],
       "onSubmit": [Function],
@@ -70,6 +72,7 @@ ReactWrapper {
         "children": Array [
           <Input />,
           <SearchButton />,
+          <RemoveButton />,
         ],
         "className": "search-form",
       },
@@ -270,6 +273,15 @@ ReactWrapper {
           },
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": "form",
     },
@@ -284,6 +296,7 @@ ReactWrapper {
         "children": Array [
           <Input />,
           <SearchButton />,
+          <RemoveButton />,
         ],
         "onChange": [Function],
         "onSubmit": [Function],
@@ -327,6 +340,7 @@ ReactWrapper {
           "children": Array [
             <Input />,
             <SearchButton />,
+            <RemoveButton />,
           ],
           "className": "search-form",
         },
@@ -525,6 +539,15 @@ ReactWrapper {
               ],
               "type": "button",
             },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
             "type": [Function],
           },
         ],
