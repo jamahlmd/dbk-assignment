@@ -14,13 +14,13 @@ const SearchInputContext = React.createContext();
 // Declare let variable to store the input ref which is used to focus the input
 let SearchInputRef;
 
-const SearchInput = ({ value, onChange, handleRemove, onSubmit, children }) => {
+const SearchInput = ({ value, onChange, handleRemove, onSubmit, onKeyUp, children }) => {
 
     // Declare state variable using react Hooks
     const [isFocused, setFocus] = useState(false);
 
     return (
-        <SearchInputContext.Provider value={{ setFocus, value, onChange, handleRemove, onSubmit }}>
+        <SearchInputContext.Provider value={{ setFocus, value, onChange, onKeyUp, handleRemove, onSubmit }}>
             <form className={classnames('search-form', {
                 'search-form__active': isFocused,
             })}>
@@ -31,12 +31,16 @@ const SearchInput = ({ value, onChange, handleRemove, onSubmit, children }) => {
 };
 
 const Input = () => {
-    const { value, onChange, setFocus } = useContext(SearchInputContext);
+    const { value, onChange, setFocus, onKeyUp } = useContext(SearchInputContext);
     return (
         <input
             type="text"
             value={value}
             onChange={onChange}
+            onKeyUp={() => {
+                // Only add onKeyUp function if one is provided
+                if (value.length > 2 && onKeyUp) onKeyUp();
+            }}
             className="search-form--input"
             placeholder="Zoeken"
             name="query"
@@ -94,6 +98,7 @@ SearchInput.propTypes = {
     onChange: PropTypes.func.isRequired,
     onSubmit: PropTypes.func.isRequired,
     handleRemove: PropTypes.func,
+    onKeyUp: PropTypes.func,
 };
 
 export default SearchInput;
