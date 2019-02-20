@@ -1,6 +1,5 @@
 header {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     padding-top: 6px; 
     flex-direction: column-reverse;

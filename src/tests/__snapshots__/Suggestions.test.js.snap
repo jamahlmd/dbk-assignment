@@ -1,0 +1,737 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render no suggestions when query.length < 2 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Suggestions
+    handlePickSuggestion={[Function]}
+    query="tr"
+    suggestions={
+        Array [
+            Object {
+              "nrResults": 1100,
+              "searchterm": "heren truien",
+            },
+            Object {
+              "nrResults": 1501,
+              "searchterm": "dames truien",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): null,
+  Symbol(enzyme.__nodes__): Array [
+    null,
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Render suggestions when query.length > 2 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Suggestions
+    handlePickSuggestion={[Function]}
+    query="trui"
+    suggestions={
+        Array [
+            Object {
+              "adjustedSearchTerm": <span>
+                heren 
+                <span
+                        className="suggestions--li--button--span"
+                >
+                        trui
+                </span>
+                en
+        </span>,
+              "nrResults": 1100,
+              "searchterm": "heren truien",
+            },
+            Object {
+              "adjustedSearchTerm": <span>
+                dames 
+                <span
+                        className="suggestions--li--button--span"
+                >
+                        trui
+                </span>
+                en
+        </span>,
+              "nrResults": 1501,
+              "searchterm": "dames truien",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <li
+          className="suggestions--li"
+>
+          <button
+                    className="suggestions--li--button"
+                    onClick={[Function]}
+          >
+                    <span>
+                              heren 
+                              <span
+                                        className="suggestions--li--button--span"
+                              >
+                                        trui
+                              </span>
+                              en
+                    </span>
+                     
+                    <span
+                              className="suggestions--li--button--span"
+                    >
+                              (
+                              1100
+                              )
+                    </span>
+          </button>
+</li>,
+        <li
+          className="suggestions--li"
+>
+          <button
+                    className="suggestions--li--button"
+                    onClick={[Function]}
+          >
+                    <span>
+                              dames 
+                              <span
+                                        className="suggestions--li--button--span"
+                              >
+                                        trui
+                              </span>
+                              en
+                    </span>
+                     
+                    <span
+                              className="suggestions--li--button--span"
+                    >
+                              (
+                              1501
+                              )
+                    </span>
+          </button>
+</li>,
+      ],
+      "className": "suggestions",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": <button
+            className="suggestions--li--button"
+            onClick={[Function]}
+>
+            <span>
+                        heren 
+                        <span
+                                    className="suggestions--li--button--span"
+                        >
+                                    trui
+                        </span>
+                        en
+            </span>
+             
+            <span
+                        className="suggestions--li--button--span"
+            >
+                        (
+                        1100
+                        )
+            </span>
+</button>,
+          "className": "suggestions--li",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span>
+                heren 
+                <span
+                                className="suggestions--li--button--span"
+                >
+                                trui
+                </span>
+                en
+</span>,
+              " ",
+              <span
+                className="suggestions--li--button--span"
+>
+                (
+                1100
+                )
+</span>,
+            ],
+            "className": "suggestions--li--button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "heren ",
+                  <span
+                    className="suggestions--li--button--span"
+>
+                    trui
+</span>,
+                  "en",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "heren ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "trui",
+                    "className": "suggestions--li--button--span",
+                  },
+                  "ref": null,
+                  "rendered": "trui",
+                  "type": "span",
+                },
+                "en",
+              ],
+              "type": "span",
+            },
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "(",
+                  1100,
+                  ")",
+                ],
+                "className": "suggestions--li--button--span",
+              },
+              "ref": null,
+              "rendered": Array [
+                "(",
+                1100,
+                ")",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "button",
+        },
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": <button
+            className="suggestions--li--button"
+            onClick={[Function]}
+>
+            <span>
+                        dames 
+                        <span
+                                    className="suggestions--li--button--span"
+                        >
+                                    trui
+                        </span>
+                        en
+            </span>
+             
+            <span
+                        className="suggestions--li--button--span"
+            >
+                        (
+                        1501
+                        )
+            </span>
+</button>,
+          "className": "suggestions--li",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span>
+                dames 
+                <span
+                                className="suggestions--li--button--span"
+                >
+                                trui
+                </span>
+                en
+</span>,
+              " ",
+              <span
+                className="suggestions--li--button--span"
+>
+                (
+                1501
+                )
+</span>,
+            ],
+            "className": "suggestions--li--button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "dames ",
+                  <span
+                    className="suggestions--li--button--span"
+>
+                    trui
+</span>,
+                  "en",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "dames ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "trui",
+                    "className": "suggestions--li--button--span",
+                  },
+                  "ref": null,
+                  "rendered": "trui",
+                  "type": "span",
+                },
+                "en",
+              ],
+              "type": "span",
+            },
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "(",
+                  1501,
+                  ")",
+                ],
+                "className": "suggestions--li--button--span",
+              },
+              "ref": null,
+              "rendered": Array [
+                "(",
+                1501,
+                ")",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "button",
+        },
+        "type": "li",
+      },
+    ],
+    "type": "ul",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <li
+            className="suggestions--li"
+>
+            <button
+                        className="suggestions--li--button"
+                        onClick={[Function]}
+            >
+                        <span>
+                                    heren 
+                                    <span
+                                                className="suggestions--li--button--span"
+                                    >
+                                                trui
+                                    </span>
+                                    en
+                        </span>
+                         
+                        <span
+                                    className="suggestions--li--button--span"
+                        >
+                                    (
+                                    1100
+                                    )
+                        </span>
+            </button>
+</li>,
+          <li
+            className="suggestions--li"
+>
+            <button
+                        className="suggestions--li--button"
+                        onClick={[Function]}
+            >
+                        <span>
+                                    dames 
+                                    <span
+                                                className="suggestions--li--button--span"
+                                    >
+                                                trui
+                                    </span>
+                                    en
+                        </span>
+                         
+                        <span
+                                    className="suggestions--li--button--span"
+                        >
+                                    (
+                                    1501
+                                    )
+                        </span>
+            </button>
+</li>,
+        ],
+        "className": "suggestions",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <button
+              className="suggestions--li--button"
+              onClick={[Function]}
+>
+              <span>
+                            heren 
+                            <span
+                                          className="suggestions--li--button--span"
+                            >
+                                          trui
+                            </span>
+                            en
+              </span>
+               
+              <span
+                            className="suggestions--li--button--span"
+              >
+                            (
+                            1100
+                            )
+              </span>
+</button>,
+            "className": "suggestions--li",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span>
+                  heren 
+                  <span
+                                    className="suggestions--li--button--span"
+                  >
+                                    trui
+                  </span>
+                  en
+</span>,
+                " ",
+                <span
+                  className="suggestions--li--button--span"
+>
+                  (
+                  1100
+                  )
+</span>,
+              ],
+              "className": "suggestions--li--button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "heren ",
+                    <span
+                      className="suggestions--li--button--span"
+>
+                      trui
+</span>,
+                    "en",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "heren ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "trui",
+                      "className": "suggestions--li--button--span",
+                    },
+                    "ref": null,
+                    "rendered": "trui",
+                    "type": "span",
+                  },
+                  "en",
+                ],
+                "type": "span",
+              },
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "(",
+                    1100,
+                    ")",
+                  ],
+                  "className": "suggestions--li--button--span",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "(",
+                  1100,
+                  ")",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "button",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": <button
+              className="suggestions--li--button"
+              onClick={[Function]}
+>
+              <span>
+                            dames 
+                            <span
+                                          className="suggestions--li--button--span"
+                            >
+                                          trui
+                            </span>
+                            en
+              </span>
+               
+              <span
+                            className="suggestions--li--button--span"
+              >
+                            (
+                            1501
+                            )
+              </span>
+</button>,
+            "className": "suggestions--li",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span>
+                  dames 
+                  <span
+                                    className="suggestions--li--button--span"
+                  >
+                                    trui
+                  </span>
+                  en
+</span>,
+                " ",
+                <span
+                  className="suggestions--li--button--span"
+>
+                  (
+                  1501
+                  )
+</span>,
+              ],
+              "className": "suggestions--li--button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "dames ",
+                    <span
+                      className="suggestions--li--button--span"
+>
+                      trui
+</span>,
+                    "en",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "dames ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "trui",
+                      "className": "suggestions--li--button--span",
+                    },
+                    "ref": null,
+                    "rendered": "trui",
+                    "type": "span",
+                  },
+                  "en",
+                ],
+                "type": "span",
+              },
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "(",
+                    1501,
+                    ")",
+                  ],
+                  "className": "suggestions--li--button--span",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "(",
+                  1501,
+                  ")",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "button",
+          },
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
