@@ -3,10 +3,13 @@ import SearchInput from './components/SearchInput';
 import Header from './components/Header';
 import Suggestions from './components/Suggestions';
 
+import { fetchSuggestions } from './api/suggestions';
+
 class App extends Component {
   state = {
     query: '',
     suggestions: [],
+    error: {},
   }
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
@@ -18,11 +21,14 @@ class App extends Component {
     this.setState({ query: suggestion }, () => this.onSubmit());
 
   fetchSuggestions = async () => {
-    const response = await fetch(`http://localhost:3000/search?q=${this.state.query}`);
-    const suggestions = await response.json();
-    this.setState({
-      suggestions: suggestions.suggestions.slice(0, 4),
-    });
+    try {
+      const data = await fetchSuggestions(this.state.query);
+      this.setState({
+        suggestions: data.suggestions.slice(0, 4),
+      });
+    } catch (error) {
+      this.setState({ error });
+    }
   }
 
   render() {
