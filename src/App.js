@@ -10,6 +10,8 @@ class App extends Component {
 
   onSubmit = () => console.log('Submit button clicked');
 
+  handleRemove = () => this.setState({ query: '' });
+
   render() {
     return (
       <div>
@@ -18,8 +20,10 @@ class App extends Component {
             value={this.state.query}
             onChange={this.onChange}
             onSubmit={this.onSubmit}
+            handleRemove={this.handleRemove}
           >
             <SearchInput.Input />
+            <SearchInput.RemoveButton />
             <SearchInput.SearchButton />
           </SearchInput>
         </Header>
